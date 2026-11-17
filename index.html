@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gowtham Kumar | Data Analyst</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #07111f;
+            color: #f5f7ff;
+            min-height: 100vh;
+        }
+
+        /* NAVBAR */
+        nav {
+            height: 75px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 8%;
+            background: rgba(7, 17, 31, 0.95);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+            color: #42e8d0;
+        }
+
+        nav a {
+            color: #c9d3e5;
+            text-decoration: none;
+            margin-left: 30px;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: #42e8d0;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: calc(100vh - 75px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 50px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            border: 1px solid rgba(66, 232, 208, 0.15);
+            left: -250px;
+            top: 100px;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+        }
+
+        /* PROFILE PHOTO */
+        .profile-photo {
+            width: 190px;
+            height: 190px;
+            object-fit: cover;
+            object-position: center top;
+            border-radius: 50%;
+            border: 3px solid #42e8d0;
+            box-shadow: 0 0 35px rgba(66, 232, 208, 0.25);
+            margin-bottom: 30px;
+        }
+
+        .small-title {
+            color: #42e8d0;
+            font-size: 15px;
+            font-weight: bold;
+            letter-spacing: 5px;
+            margin-bottom: 18px;
+        }
+
+        h1 {
+            font-size: clamp(45px, 7vw, 82px);
+            line-height: 1.05;
+            margin-bottom: 15px;
+        }
+
+        h1 span {
+            color: #42e8d0;
+        }
+
+        .role {
+            font-size: 28px;
+            color: #69a7ff;
+            font-weight: bold;
+            margin-bottom: 22px;
+        }
+
+        .description {
+            max-width: 700px;
+            margin: auto;
+            color: #aebbd0;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        /* BUTTONS */
+        .buttons {
+            margin-top: 35px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 28px;
+            margin: 8px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            border: 1px solid #42e8d0;
+            color: #ffffff;
+            transition: 0.3s;
+        }
+
+        .btn.primary {
+            background: #42e8d0;
+            color: #06111d;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(66, 232, 208, 0.2);
+        }
+
+        /* MOBILE */
+        @media (max-width: 700px) {
+
+            nav {
+                padding: 0 5%;
+            }
+
+            nav .links {
+                display: none;
+            }
+
+            .profile-photo {
+                width: 150px;
+                height: 150px;
+            }
+
+            .role {
+                font-size: 22px;
+            }
+
+            .description {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="logo">GK.</div>
+
+        <div class="links">
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <img src="profile.jpg" alt="Gowtham Kumar" class="profile-photo">
+
+            <div class="small-title">
+                DATA ANALYTICS PORTFOLIO
+            </div>
+
+            <h1>
+                Hi, I'm <span>Gowtham Kumar</span>
+            </h1>
+
+            <div class="role">
+                Aspiring Data Analyst
+            </div>
+
+            <p class="description">
+                I am a B.Tech Artificial Intelligence & Data Science student
+                passionate about turning data into meaningful insights using
+                Python, SQL, Excel, data cleaning, exploratory data analysis
+                and visualization.
+            </p>
+
+            <div class="buttons">
+                <a href="#projects" class="btn primary">
+                    View My Work
+                </a>
+
+                <a href="resume.pdf" class="btn">
+                    Download Resume
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Temporary sections so navigation works -->
+    <section id="about"></section>
+    <section id="skills"></section>
+    <section id="projects"></section>
+    <section id="contact"></section>
+
+</body>
+
+</html>
